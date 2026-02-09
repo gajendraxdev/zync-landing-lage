@@ -10,23 +10,13 @@ import { useOSDetection } from '@/hooks/use-os-detection';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Download Zync - SSH Client for macOS, Windows & Linux',
-  description: 'Download Zync SSH client for your platform. Available for macOS (Apple Silicon & Intel), Windows 10/11, and Linux (Debian, Arch, Fedora). Free and open source.',
-  openGraph: {
-    title: 'Download Zync SSH Client',
-    description: 'Get Zync for macOS, Windows, or Linux. GPU-accelerated terminal with visual port forwarding.',
-  },
-};
 
 export default function DownloadPage() {
   const { latestVersion, assets } = useGitHubData();
   const currentOs = useOSDetection();
   const [copied, setCopied] = useState(false);
 
-  const installCommand = `curl -fsSL https://raw.githubusercontent.com/FDgajju/zync-website/main/public/install.sh | sh`;
+  const installCommand = `curl -fsSL https://zync.thesudoer.in/install.sh | sh`;
 
   const copyCommand = () => {
     navigator.clipboard.writeText(installCommand);
@@ -204,7 +194,7 @@ export default function DownloadPage() {
                                 <span className="text-primary text-sm font-mono flex-shrink-0">$</span>
                                 <div className="flex-1 overflow-x-auto scrollbar-hide">
                                   <div className="text-xs font-mono text-zinc-300 whitespace-nowrap">
-                                    <span className="text-primary">curl</span> -fsSL https://raw.githubusercontent.com/FDgajju/zync-website/main/public/install.sh | sh
+                                    <span className="text-primary">curl</span> -fsSL https://zync.thesudoer.in/install.sh | sh
                                   </div>
                                 </div>
                                 <button

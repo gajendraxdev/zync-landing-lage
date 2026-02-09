@@ -1,9 +1,16 @@
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { StructuredData } from '@/components/structured-data';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#0f172a',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zync.sh'),
@@ -17,12 +24,6 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   keywords: ['SSH client', 'terminal', 'SFTP', 'port forwarding', 'developer tools', 'macOS SSH', 'Windows SSH', 'Linux SSH', 'GPU accelerated terminal'],
   referrer: 'origin-when-cross-origin',
-  themeColor: '#0f172a',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
   robots: {
     index: true,
     follow: true,
