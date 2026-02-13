@@ -19,7 +19,7 @@ export function Footer() {
               Modern SSH client for developers who care about speed and design.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-bold mb-4 text-sm">Product</h4>
             <ul className="space-y-2 text-xs text-primary-foreground/80">
@@ -31,8 +31,8 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-sm">Resources</h4>
             <ul className="space-y-2 text-xs text-primary-foreground/80">
-              <li><Link href="https://github.com/FDgajju/zync#readme" className="hover:text-white transition-colors">Docs</Link></li>
-              <li><Link href="https://github.com/FDgajju/zync/issues" className="hover:text-white transition-colors">Support</Link></li>
+              <li><Link href="https://github.com/gajendraxdev/zync#readme" className="hover:text-white transition-colors">Docs</Link></li>
+              <li><Link href="https://github.com/gajendraxdev/zync/issues" className="hover:text-white transition-colors">Support</Link></li>
             </ul>
           </div>
 
@@ -40,19 +40,19 @@ export function Footer() {
             <h4 className="font-bold mb-4 text-sm">Connect</h4>
             <ul className="space-y-2 text-xs text-primary-foreground/80">
               <li>
-                <Link href="https://github.com/FDgajju/zync" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Link href="https://github.com/gajendraxdev/zync" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Github size={14} /> GitHub
                 </Link>
               </li>
               <li>
-                <Link href="https://github.com/FDgajju/zync/issues/new" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Link href="https://github.com/gajendraxdev/zync/issues/new" className="flex items-center gap-2 hover:text-white transition-colors">
                   <AlertCircle size={14} /> Report
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-primary-foreground/50">
           <p>© 2026 Zync Project. MIT.</p>
           <div className="flex gap-4">

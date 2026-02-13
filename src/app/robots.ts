@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://zync.sh/sitemap.xml',
+        sitemap: 'https://zync.thesudoer.in/sitemap.xml',
     };
 }

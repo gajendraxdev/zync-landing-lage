@@ -3,7 +3,7 @@
 The official landing page and documentation site for **Zync** - the modern, native SSH client.
 
 🌐 **Live Site:** [zync.thesudoer.in](https://zync.thesudoer.in)
-📂 **Main Project:** [github.com/FDgajju/zync](https://github.com/FDgajju/zync)
+📂 **Main Project:** [github.com/gajendraxdev/zync](https://github.com/gajendraxdev/zync)
 
 ## 🚀 Overview
 
@@ -24,4 +24,4 @@ curl -fsSL https://zync.thesudoer.in/install.sh | sh
 
 ## 📄 License
 
-MIT © [Zync](https://github.com/FDgajju/zync)
+MIT © [Zync](https://github.com/gajendraxdev/zync)

@@ -27,17 +27,17 @@ export function useGitHubData() {
   useEffect(() => {
     const fetchRepo = async () => {
       try {
-        const repoRes = await fetch('https://api.github.com/repos/FDgajju/zync');
+        const repoRes = await fetch('https://api.github.com/repos/gajendraxdev/zync');
         if (!repoRes.ok) throw new Error('Repo fetch failed');
         const repoData = await repoRes.json();
-        
+
         const stars = repoData.stargazers_count ?? 0;
         const formattedStars = stars > 1000 ? (stars / 1000).toFixed(1) + 'k' : stars.toString();
 
-        const releaseRes = await fetch('https://api.github.com/repos/FDgajju/zync/releases/latest');
+        const releaseRes = await fetch('https://api.github.com/repos/gajendraxdev/zync/releases/latest');
         if (!releaseRes.ok) throw new Error('Release fetch failed');
         const releaseData = await releaseRes.json();
-        
+
         const assets = releaseData.assets || [];
         const winAsset = assets.find((a: any) => a.name.endsWith('.exe'))?.browser_download_url || '#';
         const macAsset = assets.find((a: any) => a.name.endsWith('.dmg') || (a.name.endsWith('.zip') && a.name.toLowerCase().includes('mac')))?.browser_download_url || '#';

@@ -208,7 +208,7 @@ export default function DownloadPage() {
                             </div>
                             <div className="mt-4 text-center">
                               <a
-                                href="https://github.com/FDgajju/zync/releases"
+                                href="https://github.com/gajendraxdev/zync/releases"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-xs text-muted-foreground hover:text-primary transition-colors underline underline-offset-4 font-medium"

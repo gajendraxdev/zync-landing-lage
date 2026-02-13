@@ -13,14 +13,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://zync.sh'),
+  metadataBase: new URL('https://zync.thesudoer.in'),
   title: {
     default: 'Zync - Modern SSH Client for Developers',
     template: '%s | Zync'
   },
   description: 'Beautiful SSH client with visual tunnel manager, SFTP, and modern terminal. Open source and cross-platform for macOS, Windows, and Linux.',
   applicationName: 'Zync',
-  authors: [{ name: 'Zync Team', url: 'https://zync.sh' }],
+  authors: [{ name: 'Zync Team', url: 'https://zync.thesudoer.in' }],
   generator: 'Next.js',
   keywords: ['SSH client', 'terminal', 'SFTP', 'port forwarding', 'developer tools', 'macOS SSH', 'Windows SSH', 'Linux SSH', 'GPU accelerated terminal'],
   referrer: 'origin-when-cross-origin',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://zync.sh',
+    url: 'https://zync.thesudoer.in',
     siteName: 'Zync',
     title: 'Zync - The Modern SSH Client',
     description: 'Experience SSH reimagined. GPU-accelerated terminal, visual port forwarding, and seamless file transfer in one beautiful app.',

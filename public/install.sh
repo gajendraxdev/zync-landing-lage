@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Zync Install Script
-# Usage: curl -f https://raw.githubusercontent.com/FDgajju/zync-website/main/public/install.sh | sh
+# Usage: curl -f https://raw.githubusercontent.com/gajendraxdev/zync-website/main/public/install.sh | sh
 
 set -e
 
-REPO="FDgajju/zync"
+REPO="gajendraxdev/zync"
 APP_NAME="Zync"
 BIN_DIR="$HOME/.local/bin"
 APP_DIR="$HOME/.local/share/zync"
@@ -92,7 +92,7 @@ ln -sf "$APPIMAGE_PATH" "$BIN_DIR/zync"
 
 # 7. Download Icon to System Theme
 # Using src-tauri/icons/icon.png from main branch (High-Res 512x512)
-ICON_URL="https://raw.githubusercontent.com/FDgajju/zync/main/src-tauri/icons/icon.png"
+ICON_URL="https://raw.githubusercontent.com/gajendraxdev/zync/main/src-tauri/icons/icon.png"
 curl -s -L "$ICON_URL" -o "$ICON_DIR/zync.png" || echo "   Warning: Could not fetch icon."
 
 # 8. Create Desktop Entry

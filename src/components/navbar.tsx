@@ -26,12 +26,12 @@ export function Navbar() {
         <div className="hidden md:flex items-center justify-center gap-6">
           <Link href="/#features" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">Features</Link>
           <Link href="/#faq" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">FAQ</Link>
-          <Link href="https://github.com/FDgajju/zync" target="_blank" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">Docs</Link>
+          <Link href="https://github.com/gajendraxdev/zync" target="_blank" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">Docs</Link>
         </div>
 
         {/* Right: Actions */}
         <div className="flex items-center justify-end gap-1.5">
-          <Link href="https://github.com/FDgajju/zync" target="_blank">
+          <Link href="https://github.com/gajendraxdev/zync" target="_blank">
             <Button variant="outline" size="sm" className="hidden sm:flex gap-1 h-7 text-[9px] px-2 font-bold border-border/60">
               <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
               <span>{stars}</span>

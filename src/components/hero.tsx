@@ -127,7 +127,7 @@ export function Hero() {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link href="https://github.com/FDgajju/zync" target="_blank">
+            <Link href="https://github.com/gajendraxdev/zync" target="_blank">
               <Button variant="outline" size="lg" className="h-11 px-8 text-sm gap-2 font-bold bg-background/50 backdrop-blur-sm border-border/60">
                 <Github className="w-4 h-4" />
                 Source Code
