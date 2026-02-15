@@ -24,9 +24,10 @@ export function Navbar() {
 
         {/* Center: Links - Grid ensures true centering */}
         <div className="hidden md:flex items-center justify-center gap-6">
+          <Link href="/" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">Home</Link>
           <Link href="/#features" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">Features</Link>
-          <Link href="/#faq" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">FAQ</Link>
           <Link href="https://github.com/gajendraxdev/zync" target="_blank" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">Docs</Link>
+          <Link href="/#faq" className="text-[10px] font-bold text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest">FAQ</Link>
         </div>
 
         {/* Right: Actions */}

@@ -9,20 +9,41 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: '#0f172a',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+  ],
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zync.thesudoer.in'),
+  category: 'technology',
+  alternates: {
+    canonical: '/',
+  },
   title: {
-    default: 'Zync - Modern SSH Client for Developers',
+    default: 'Zync - Open Source SSH Client for Developers & DevOps',
     template: '%s | Zync'
   },
-  description: 'Beautiful SSH client with visual tunnel manager, SFTP, and modern terminal. Open source and cross-platform for macOS, Windows, and Linux.',
+  description: 'Beautiful open-source SSH client with visual tunnel manager, SFTP, and modern terminal. Secure remote server access for developers, DevOps engineers, and power users. Available for macOS, Windows, and Linux.',
   applicationName: 'Zync',
   authors: [{ name: 'Zync Team', url: 'https://zync.thesudoer.in' }],
   generator: 'Next.js',
-  keywords: ['SSH client', 'terminal', 'SFTP', 'port forwarding', 'developer tools', 'macOS SSH', 'Windows SSH', 'Linux SSH', 'GPU accelerated terminal'],
+  keywords: [
+    'SSH client',
+    'open source SSH client',
+    'terminal emulator',
+    'DevOps tools',
+    'remote server management',
+    'SFTP client',
+    'port forwarding tool',
+    'Linux SSH client',
+    'Windows SSH client',
+    'macOS SSH client',
+    'GPU accelerated terminal'
+  ],
+
+
   referrer: 'origin-when-cross-origin',
   robots: {
     index: true,
@@ -40,28 +61,29 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://zync.thesudoer.in',
     siteName: 'Zync',
-    title: 'Zync - The Modern SSH Client',
+    title: 'Zync - Open Source SSH Client',
     description: 'Experience SSH reimagined. GPU-accelerated terminal, visual port forwarding, and seamless file transfer in one beautiful app.',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://zync.thesudoer.in/og-image2.png',
         width: 1200,
         height: 630,
         alt: 'Zync SSH Client Interface',
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Zync - Modern SSH Client',
-    description: 'Beautiful SSH client with visual tunnel manager, SFTP, and modern terminal.',
-    creator: '@zync_sh',
-    images: ['/og-image.png'],
-  },
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon64x64.png', sizes: '64x64', type: 'image/png' },
+    ],
+    apple: '/favicon64x64.png',
+  },
+  appleWebApp: {
+    capable: true,
+    title: 'Zync',
+    statusBarStyle: 'black-translucent',
   },
   manifest: '/site.webmanifest',
 };
